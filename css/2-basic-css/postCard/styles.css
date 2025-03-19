@@ -1,0 +1,40 @@
+body {
+	background-color: rgb(214, 211, 211);
+}
+.blog-post-card {
+	background-color: white;
+	border-radius: 10px;
+	width: 300px;
+	text-align: center;
+}
+
+.post-img {
+	width: 100%;
+	border-bottom: 5px solid rgb(41, 41, 41);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.post-content {
+	padding: 1rem;
+}
+
+.post-title,
+.post-excerpt {
+	color: rgb(41, 41, 41);
+	margin: 10px;
+}
+
+.read-more {
+	background-color: rgb(41, 41, 41);
+	color: white;
+	margin: 5px;
+	padding: 10px;
+	border-radius: 10px;
+	display: inline-block;
+}
+
+.read-more:hover {
+	background-color: black;
+	color: white;
+}
