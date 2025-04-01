@@ -1,0 +1,39 @@
+body {
+	background-color: #f4f4f4;
+	display: flex;
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.color-grid {
+	/* margin: 0 auto; */
+	display: flex;
+	gap: 4rem;
+}
+
+.color-box {
+	height: 65px;
+	width: 65px;
+	border-radius: 5px;
+}
+
+.color1 {
+	background-color: #87e94e;
+}
+
+.color2 {
+	background-color: rgb(102, 19, 122);
+}
+
+.color3 {
+	background-color: orangered;
+}
+
+.color4 {
+	background-color: hsl(64, 97%, 26%);
+}
+
+.color5 {
+	background-color: rgb(236, 4, 4);
+}
