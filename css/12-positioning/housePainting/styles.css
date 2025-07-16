@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--house-clr: #ff9980;
+	--house-accent: #b35900;
+	--door-clr: #e6e6e6;
+	--ground: #008000;
+	--sky: #b3e6ff;
+	--window: #ffffb3;
+}
+
+body {
+	min-height: 100dvh;
+}
+
+#house {
+	position: relative;
+	width: 500px;
+	height: 400px;
+	background-color: var(--house-clr);
+	border: 1px solid var(--house-accent);
+	top: 100px;
+	left: 50%;
+	transform: translate(-50%);
+	z-index: 5;
+}
+
+#chimney,
+#roof,
+#window-1,
+#window-2,
+#door {
+	position: absolute;
+}
+
+#roof {
+	width: 100%;
+	height: 10px;
+	border: 1px solid var(--house-accent);
+	background-color: var(--house-accent);
+	top: 0;
+	z-index: 5;
+}
+
+#chimney {
+	width: 50px;
+	height: 30px;
+	border-top: var(--door-clr);
+	background-color: var(--door-clr);
+	top: -30px;
+	left: 50px;
+	z-index: -1;
+	border: 1px solid black;
+}
+
+#window-1 {
+	width: 150px;
+	height: 125px;
+	border: 1px solid var(--house-accent);
+	background-color: var(--window);
+	left: 10px;
+	top: 60px;
+}
+
+#window-2 {
+	width: 150px;
+	height: 125px;
+	border: 1px solid var(--house-accent);
+	background-color: var(--window);
+	right: 10px;
+	top: 60px;
+}
+
+#door {
+	width: 125px;
+	height: 200px;
+	border: 1px solid var(--house-accent);
+	background-color: var(--door-clr);
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 0%);
+}

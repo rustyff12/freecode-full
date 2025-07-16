@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 24px;
+}
+
+body {
+	font-family: "Helvetica, Arial, sans-serif";
+	padding: 1rem;
+}
+
+.newspaper {
+	font-size: 16px;
+	font-family: Open Sans, sans-serif;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.name {
+	font-size: 2rem;
+	font-family: "Times New Roman", serif;
+}
+
+.name,
+.author {
+	text-transform: uppercase;
+}
+
+.headline {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.sub-headline {
+	font-weight: 100;
+	font-size: 1.5em;
+	font-style: italic;
+}
+
+.author {
+	font-weight: bold;
+}
+
+.text {
+	text-indent: 20px;
+	line-height: 2em;
+}
+
+.text::first-letter {
+	font-weight: bold;
+	font-size: 2em;
+}
